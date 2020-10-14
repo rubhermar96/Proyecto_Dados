@@ -1,6 +1,6 @@
 <?php
-for ($i=1; i<=8; i++){
-    $numero = rand(1,6)
+for ($i=1; i<=8; $i++){
+    $numero = rand(1,6);
     switch ($numero){
         case 1:
             echo '<img src="img/uno.jpg" alt="Uno" width="150" height="150">';
