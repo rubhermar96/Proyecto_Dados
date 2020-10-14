@@ -22,4 +22,4 @@ echo '<!DOCTYPE html>
         </div>
     </div>
 </body>
-</html>'
+</html>';
