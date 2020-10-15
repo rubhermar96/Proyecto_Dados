@@ -1,18 +1,20 @@
 <?php
-$email = $_REQUEST[email];
-$password = $_REQUEST[contraseña];
-
-if ($email = "juan@gmail.com" && $password = "juan"){
-    
-}
-
+session_start();//primera sentencia para trabajar con sesiones
+if(isset($_REQUEST['login'])){
+    $_SESSION['email']=$_REQUEST['email'];
+    $email=$_REQUEST['email'];
+    $password=$_REQUEST['contraseña'];
+    if($email="juan@gmail.com" && $password="juan"){
+        header('Location:menu.php');
+    }
+}else{
 echo '<!DOCTYPE html>
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Registration Form</title>
+    <title>LOG IN</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -20,14 +22,15 @@ echo '<!DOCTYPE html>
     <div id="encabezado">
         <h1>LOG IN</h1>
     </div>
-    <form method="post" action="" name="login-form">
+    <form method="post" action="index.php" name="login-form">
         <div class="elemento-form">
             <input type="text" name="email" placeholder="EMAIL" required />
         </div>
         <div class = "elemento-form">
             <input type="password" name="contraseña" placeholder="PASSWORD" required />
         </div>
-        <button type="submit" name="login" value="login">LOG IN</button>
+        <input type="submit" name="login" value="LOG IN">
     </form>
 </body>
 </html>';
+}

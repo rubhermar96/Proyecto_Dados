@@ -1,0 +1,38 @@
+#menu{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: royalblue;
+    height: 200px;
+}
+#navegador{
+    margin: 0 auto;
+    padding: 20px;
+}
+h1{
+    color: whitesmoke;
+    font-size: 80px;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+li{
+    margin-left: 25px;
+    display: block;
+    padding: 0 10px;
+    float: left; 
+}
+a{
+    font-family: monospace;
+    color: whitesmoke;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
