@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 50px auto;
+    text-align: center;
+    width: 700px;
+}
+
+label{
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+}
+
+input{
+    margin: 10px auto;
+    border: 2px solid;
+    padding: 10px;
+    width: 80%;
+}
+
+#encabezado{
+    margin:  auto;
+    padding: 10px;
+    border: 5px solid;
+    border-bottom: unset;
+    width: 500px;
+    background: lightseagreen;
+}
+form{
+    margin:  auto;
+    padding: 20px;
+    border: 5px solid;
+    width: 500px;
+    background: #eee;
+}
+
+#elemento-form{
+    margin: 20px 0;
+}
+
+button{
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px;
+    background: lightseagreen;
+}
