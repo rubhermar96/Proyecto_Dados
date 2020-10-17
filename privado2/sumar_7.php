@@ -6,7 +6,7 @@ $dado1 = 0;
 $dado2 = 0;
 $contador = 0;
 
-while ($suma = 7){
+while ($suma != 7){
     $dado1 = rand(1,6);
     $dado2 = rand(1,6);
     $suma = $dado1 + $dado2;
@@ -55,5 +55,5 @@ switch ($dado2){
         break;
 }
 
-echo 'Se han necesitado:'. $contador . ' intentos';
+echo '<br><h2>Número de Intentos: '. $contador . '</h2>';
 ?>
