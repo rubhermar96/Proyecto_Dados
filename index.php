@@ -22,7 +22,7 @@ echo '<!DOCTYPE html>
     <div id="encabezado">
         <h1>LOG IN</h1>
     </div>
-    <form method="post" action="index.php" name="login-form">
+    <form method="POST" action="index.php" name="login-form">
         <div class="elemento-form">
             <input type="text" name="email" placeholder="EMAIL" required />
         </div>
