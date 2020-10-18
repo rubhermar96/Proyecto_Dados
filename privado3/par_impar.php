@@ -1,5 +1,37 @@
 <?php
-include 'menu.php';
+echo '<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Par Impar</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesmenu.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Menu</h1>
+        <div class = "navegador">
+            <ul>
+            <li><a href="../privado1/tirada_dados.php">TIRADA</a></li>
+            <li><a href="../privado2/sumar_7.php">SUMA 7</a></li>
+            <li><a href="../privado3/par_impar.php">PAR/IMPAR</a></li>
+            <li><a href="../acerca_de.php">ACERCA DE</a></li>
+            </ul>
+        </div>
+    </div>
+    <form method="POST" action="par_impar.php" name="radio_button">
+    <h2>¿Saldrá Par o Impar?</h2>
+    <input type="radio" name="radio_par" value="par">
+    <label for="radio_par">PAR</label><br>
+    <input type="radio" name="radio_impar" value"impar">
+    <label for="radio_impar">IMPAR</label><br>
+    <input type="submit" value="Comprobar" name="comprobar">
+</form>
+</body>
+</html>';
+   
 if (isset($_REQUEST['comprobar'])){
     $dado1 = rand(1,6);
     $dado2 = rand(1,6);
@@ -79,26 +111,5 @@ if (isset($_REQUEST['comprobar'])){
             print 'HAS ACERTADO! LA SUMA ES IMPAR';
         }
     }
-    
-}else{
-echo '<!DOCTYPE html>
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Par Impar/title>
-</head>
-<body>
-    <form method="POST" action="par_impar.php" name="radio_button">
-        <h2>¿Saldrá Par o Impar?</h2>
-        <input type="radio" name="radio_par" value="par">
-        <label for="radio_par">PAR</label><br>
-        <input type="radio" name="radio_impar" value"impar">
-        <label for="radio_impar">IMPAR</label><br>
-        <input type="submit" value="Comprobar" name="comprobar">
-    </form>
-</body>
-</html>';
 }
 
