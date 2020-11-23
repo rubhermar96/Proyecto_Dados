@@ -9,7 +9,6 @@ if(isset($_REQUEST['login'])){
     }else {
         header('Location:index.php');
     }
-    if
 }else{
 echo '<!DOCTYPE html>
 <html>
