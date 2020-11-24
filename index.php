@@ -1,7 +1,7 @@
 <?php
 session_start();//primera sentencia para trabajar con sesiones
 if(isset($_REQUEST['login'])){
-    $_SESSION['email']=htmlspecialchars($_REQUEST['email'], ENT_QUOTES, 'UTF-8');
+    $_SESSION['email']=htmlspecialchars($_REQUES['email'], ENT_QUOTES, 'UTF-8');
     $email=htmlspecialchars($_REQUEST['email'], ENT_QUOTES, 'UTF-8');
     $password=htmlspecialchars($_REQUEST['contraseña'], ENT_QUOTES, 'UTF-8');
     if($email==="juan@gmail.com" && $password==="juan"){
