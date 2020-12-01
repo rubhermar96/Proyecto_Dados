@@ -11,8 +11,8 @@ deploy:
 
   provider: heroku
 
-  app: pdes-flappernews
+  app: entrega-despliegue-continuo
 
-  api_key:
+  api_key:65198f88-ef9e-4a42-a934-e0c52b452059
 
     secure: $HEROKU_API_KEY
