@@ -7,25 +7,13 @@ php:
 script:
   - php index.php
 
-jobs:
-  include:
-    - stage: unit tests
-      script: "Running unit tests (1)"
-    - stage: unit tests
-      script: "Running unit tests (2)"
-    - stage: deploy to staging
-      script: skip
-      deploy: &heroku
-        provider: heroku
-        app: entrega-despliegue-continuo
-        api_key: $HEROKU_API_KEY
-    - stage: test staging
-      script: 'curl http://entrega-despliegue-continuo.herokuapp.com'
-    - stage: deploy to production
-      script: skip
-      deploy:
-        <<: *heroku
-        app: entrega-despliegue-continuo
-    - stage: test production
-      script: 'curl http://entrega-despliegue-continuo.herokuapp.com'
+deploy:
+
+  provider: heroku
+
+  app: entrega-despliegue-continuo
+
+  api_key:
+
+    secure: $HEROKU_API_KEY
 
